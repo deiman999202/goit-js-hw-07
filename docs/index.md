@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/Deiman999202/goit-js-hw-07/edit/homework-08/docs/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Homework 8</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body>
+    <!-- В этот список добавляй элементы галереи -->
+    <ul class="gallery js-gallery"></ul>
 
-### Markdown
+    <!--
+      Модальное окно для полноразмерного изображения
+      Для того чтобы открыть, необходимо добавить на div.lightbox CSS-класс is-open
+    -->
+    <div class="lightbox js-lightbox">
+        <div class="lightbox__overlay"></div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        <div class="lightbox__content">
+            <img class="lightbox__image" src="" alt="" />
+        </div>
 
-```markdown
-Syntax highlighted code block
+        <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
+    </div>
 
-# Header 1
-## Header 2
-### Header 3
+    <script src="script.js" type="module"></script>
+</body>
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Deiman999202/goit-js-hw-07/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</html>
